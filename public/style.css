@@ -1,0 +1,33 @@
+.todolist{
+  width: 70%;
+
+  margin-left: 15%;
+  border:12px solid
+}
+li{
+
+  list-style: none;
+  float:left;
+  display:block;
+  text-align: left;
+width: 100%;
+}
+
+
+
+.form1{
+  width: 70%;
+  padding: 2% 5%;
+  margin-left: 15%;
+  text-align: center;
+}
+.head{
+      padding: 2% 5%;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+  }
+body{
+  background-color: red;
+
+  background-image: url("images/bg1.png");
+}

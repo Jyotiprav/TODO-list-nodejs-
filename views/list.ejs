@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="head">
+      <h1> Today is <%= day %>! </h1>
+    </div>
+
+    <div class="todolist">
+
+<ul class="list-group">
+
+        <%  for (var i=0;i<newitem.length;i++){ %>
+          <form class="" action="/delete" method="post">
+              <li class="list-group-item"><input class="form-check-input" value="<%= newitem[i]._id %>"type="checkbox" name="checkbox" onChange="this.form.submit()"><%= newitem[i].name %></li>
+          </form>
+
+        <%  }%>
+
+  </ul>
+    </div>
+<div class="form1">
+  <form class="" action="/" method="post">
+    <input type="text" name="newitem">
+    <button type="submit" class="btn btn-dark">Add</button>
+
+  </form>
+</div>
+
+
+  </body>
+</html>
